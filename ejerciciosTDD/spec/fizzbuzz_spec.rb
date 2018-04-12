@@ -8,7 +8,7 @@ describe FizzBuzz do
 	 #Arrange
 	 fizzbuzz = FizzBuzz.new
 	 #Act
-	 resultado= fizzbuzz.es_divisible(3)
+	 resultado= fizzbuzz.es_divisible?(3)
 	 #Assert	
      expect(resultado).to eq "Fizz"
 	
@@ -20,9 +20,22 @@ describe FizzBuzz do
 	 #Arrange
 	 fizzbuzz = FizzBuzz.new
 	 #Act
-	 resultado= fizzbuzz.es_divisible(5)
+	 resultado= fizzbuzz.es_divisible?(5)
 	 #Assert	
      expect(resultado).to eq "Buzz"
+	
+	end
+
+
+	it 'Si el número es divisible por 3 y 5 retorna "FizzBuzz"' do
+
+	 #Arrange
+	 fizzbuzz = FizzBuzz.new
+	 #Act
+	 resultado= fizzbuzz.es_divisible?(3)+fizzbuzz.es_divisible?(5) or fizzbuzz.es_divisible?(5)+fizzbuzz.es_divisible?(3)
+	
+	 #Assert	
+     expect(resultado).to eq "FizzBuzz"
 	
 	end
 
