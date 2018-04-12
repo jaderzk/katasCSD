@@ -14,6 +14,18 @@ describe FizzBuzz do
 	
 	end
 
+
+	it 'Si el número es divisible por 5 retorna "Buzz"' do
+
+	 #Arrange
+	 fizzbuzz = FizzBuzz.new
+	 #Act
+	 resultado= fizzbuzz.es_divisible(5)
+	 #Assert	
+     expect(resultado).to eq "Buzz"
+	
+	end
+
 	
 end
 
