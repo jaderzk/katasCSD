@@ -1,0 +1,3 @@
+Si el númnero es divisible por 3 retorna "Fizz"
+Si el número es divisible por 5 retorna "Buzz"
+Si el número es divisible por 3 y 5 retorna "FizzBuzz"
