@@ -1,19 +1,18 @@
 
 class EntradasTeclado
 
-	comandos = ["q","tweet","dm","help"]
-	acciones = ["GoodBye","Tweeting","Direct Messaging","Helping"]
+	$comando = {"q" =>"GoodBye", "tweet" => "Tweeting", "dm" =>"Direct Messaging", "help" => "Helping"}
+	
+	def ingresar_tecla tecla
+     
+	    $comando[tecla]
 
-	def ingresar_tecla tecla 
-        if tecla == "q"
-        	"GoodBye"
-        elsif tecla == "tweet"
-            "Tweeting"
-        elsif tecla == "dm"
-            "Direct Messaging"
-        elsif tecla == "help"
-            "Helping"        	 	
-       end
-    end   
+    end    
 
+   
 end
+
+et= EntradasTeclado.new
+resultado = et.ingresar_tecla "q"
+print resultado
+
