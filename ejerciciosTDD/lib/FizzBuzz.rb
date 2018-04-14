@@ -25,7 +25,7 @@ class FizzBuzz
 
 end
 
-
+=begin
 ejemplo = FizzBuzz.new
 
 10.times do
@@ -33,3 +33,4 @@ print "Ingrese número: "
 numero=gets.chomp.to_i
 puts ejemplo.es_divisible? numero
 end
+=end
