@@ -1,16 +1,13 @@
 class FizzBuzz
 
   $mensajes = [es_divisible_por_tres ="Fizz" , es_divisible_por_cinco="Buzz", es_divisible_por_tres_y_cinco="FizzBuzz"]
-
+  
 	def es_divisible? numero
-
-    if es_divisible_por_tres_y_cinco(numero)  
-          $mensajes[2]         
-    elsif es_divisible_por_tres(numero)
-          $mensajes[0]          
-    elsif es_divisible_por_cinco(numero)
-          $mensajes[1] 
-    end 
+    
+    return $mensajes[2] if es_divisible_por_tres_y_cinco(numero) 
+    return $mensajes[1] if es_divisible_por_cinco(numero)
+    return $mensajes[0] if es_divisible_por_tres(numero)
+      
 	end
 
   @public 
