@@ -1,13 +1,15 @@
 class FizzBuzz
 
+  $mensajes = [es_divisible_por_tres ="Fizz" , es_divisible_por_cinco="Buzz", es_divisible_por_tres_y_cinco="FizzBuzz"]
+
 	def es_divisible? numero
 
     if es_divisible_por_tres_y_cinco(numero)  
-          "FizzBuzz"         
+          $mensajes[2]         
     elsif es_divisible_por_tres(numero)
-          "Fizz"          
+          $mensajes[0]          
     elsif es_divisible_por_cinco(numero)
-          "Buzz" 
+          $mensajes[1] 
     end 
 	end
 
