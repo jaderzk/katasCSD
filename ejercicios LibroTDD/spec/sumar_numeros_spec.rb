@@ -11,4 +11,15 @@ describe 'juegocalculadora'  do
     expect(resultado_suma).to eq 4
 
 	end
+
+	it "sumar 2 números con diferentes valores debe devolver el resultado" do
+    #Arrange
+    juego_matematicas = Calculadora.new
+    #Act
+    resultado_suma = juego_matematicas.sumar(2,5)
+    #Assert
+    expect(resultado_suma).to eq 7
+	end	
+
+
 end
